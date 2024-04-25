@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Risk Assessment</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+<div id="content">
+  <h1>Crop Risk Assessment</h1>
+
+  <form id="riskForm">
+    <label for="cropType">Select Crop Type:</label>
+    <select id="cropType" name="cropType">
+      <option value="wheat">Wheat</option>
+      <option value="corn">Corn</option>
+      <option value="soybean">Soybean</option>
+      
+    </select>
+
+    <label for="weatherConditions">Weather Conditions:</label>
+    <input type="text" id="weatherConditions" name="weatherConditions" placeholder="e.g., Normal, Drought, Heavy Rainfall" required>
+
+    <label for="pestInfestation">Pest Infestation:</label>
+    <input type="text" id="pestInfestation" name="pestInfestation" placeholder="e.g., Low, Moderate, High" required>
+
+    <label for="marketDemand">Market Demand:</label>
+    <input type="text" id="marketDemand" name="marketDemand" placeholder="e.g., Low, Average, High" required>
+
+    <label for="soilQuality">Soil Quality:</label>
+    <input type="text" id="soilQuality" name="soilQuality" placeholder="e.g., Poor, Fair, Good" required>
+
+    <label for="location">Geographical Location:</label>
+    <input type="text" id="location" name="location" placeholder="e.g., Coastal, Highland, Plain" required>
+
+    <label for="financialStability">Financial Stability:</label>
+    <input type="text" id="financialStability" name="financialStability" placeholder="e.g., Low, Moderate, High" required>
+
+    <button type="button" onclick="assessRisk()">Assess Risk</button>
+  </form>
+</div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d7eaa6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1a237e;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+ul {
+    margin-left: 20px;
+    color: #555;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: #F5EFE6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #673ab7;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #5e35b1;
+}
+
+#quiz-result {
+    font-weight: bold;
+    color: #388e3c;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

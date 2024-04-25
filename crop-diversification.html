@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Diversification</title>
+    <link rel="stylesheet" href="cp.css">
+</head>
+<body>
+    <h1>Crop Diversification</h1>
+    <p>Crop diversification is the practice of growing a variety of crops in the same area. It offers numerous benefits:</p>
+    <ul>
+        <li>Reduces soil erosion.</li>
+        <li>Improves soil health and fertility.</li>
+        <li>Attracts beneficial insects and reduces pests.</li>
+    </ul>
+
+    <h2>Examples of Diversely Planted Fields</h2>
+    <img src="5.jpg" alt="Diverse Field 1" width="300" height="200">
+    <img src="4.jpg" alt="Diverse Field 2" width="300">
+    
+    <h2>Test Your Knowledge!</h2>
+    <p>Take the quiz below to test your knowledge about different crop combinations:</p>
+    <form id="quiz-form">
+        <p>Which crop combination is beneficial for soil health?</p>
+        <input type="radio" name="question1" value="a"> Corn and soybeans<br>
+        <input type="radio" name="question1" value="b"> Wheat and legumes<br>
+        <input type="radio" name="question1" value="c"> Rice and bananas<br>
+
+        <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+    
+    <p id="quiz-result"></p>
+
+    <script>
+        function submitQuiz() {
+            const quizForm = document.getElementById('quiz-form');
+            const selectedOption = quizForm.question1.value;
+            let resultText = '';
+
+            if (selectedOption === 'b') {
+                resultText = 'Correct! Wheat and legumes are beneficial for soil health.';
+            } else {
+                resultText = 'Incorrect. Wheat and legumes are a beneficial crop combination.';
+            }
+
+            document.getElementById('quiz-result').textContent = resultText;
+        }
+    </script>
+</body>
+</html>
